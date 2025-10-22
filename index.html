@@ -1,22 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proposta: Limpeza Profissional para Escolas de Pitanga, PR</title>
-
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Fonte Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-    <!-- CSS Custom -->
-    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f9;
+        }
+        .container {
+            max-width: 900px;
+        }
+        .header-bg {
+            /* Cor mais voltada para o profissionalismo e educação */
+            background: linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%); 
+        }
+    </style>
 </head>
 <body class="min-h-screen flex items-center justify-center p-4">
 
+    <!-- Container Principal do Website -->
     <div class="container bg-white shadow-2xl rounded-xl overflow-hidden md:p-8 p-6">
         
+        <!-- Cabeçalho (Header) - PROPOSTA FORMAL -->
         <header class="header-bg text-white p-6 rounded-t-lg mb-6 shadow-xl">
+            <!-- A imagem foi removida daqui -->
+            
             <h1 class="text-3xl md:text-4xl font-extrabold text-center">
                 PROPOSTA DE GESTÃO E SUSTENTABILIDADE ESCOLAR
             </h1>
@@ -25,29 +37,37 @@
             </p>
         </header>
 
+        <!-- Seção Principal de Informações - Análise de Negócios em Abas -->
         <main>
+            
+            <!-- Navegação por Abas (Tabs) -->
             <div id="tab-nav" class="flex flex-wrap justify-start border-b border-gray-300 mb-6">
+                <!-- 1. Problema (Ativo por padrão) -->
                 <button id="btn-problema" onclick="openTab('tab-problema', 'btn-problema')" class="tab-button py-3 px-4 sm:px-6 text-base font-semibold text-blue-600 border-b-2 border-blue-600 transition duration-150 whitespace-nowrap">
                     1. Problema
                 </button>
+                <!-- 2. Solução -->
                 <button id="btn-solucao" onclick="openTab('tab-solucao', 'btn-solucao')" class="tab-button py-3 px-4 sm:px-6 text-base font-semibold text-gray-500 hover:text-blue-600 hover:border-blue-300 border-b-2 border-transparent transition duration-150 whitespace-nowrap">
                     2. Solução
                 </button>
+                <!-- 3. Rentabilidade -->
                 <button id="btn-rentabilidade" onclick="openTab('tab-rentabilidade', 'btn-rentabilidade')" class="tab-button py-3 px-4 sm:px-6 text-base font-semibold text-gray-500 hover:text-blue-600 hover:border-blue-300 border-b-2 border-transparent transition duration-150 whitespace-nowrap">
                     3. Rentabilidade
                 </button>
+                <!-- 4. Concorrentes -->
                 <button id="btn-concorrentes" onclick="openTab('tab-concorrentes', 'btn-concorrentes')" class="tab-button py-3 px-4 sm:px-6 text-base font-semibold text-gray-500 hover:text-blue-600 hover:border-blue-300 border-b-2 border-transparent transition duration-150 whitespace-nowrap">
                     4. Concorrentes
                 </button>
             </div>
 
+            <!-- Conteúdo das Abas -->
             <div id="tab-content-container">
 
+                <!-- 1. O Problema -->
                 <section id="tab-problema" class="tab-content p-6 bg-red-50 rounded-lg border-l-4 border-red-600 shadow-md">
                     <h2 class="text-2xl font-bold text-red-700 mb-3 flex items-center">
-                        <svg class="w-6 h-6 mr-2 text-red-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.398 16c-.77 1.333.192 3 1.732 3z"></path>
-                        </svg>
+                        <!-- Icone de Alerta -->
+                        <svg class="w-6 h-6 mr-2 text-red-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.398 16c-.77 1.333.192 3 1.732 3z"></path></svg>
                         1. O Problema: Necessidade de Manutenção Constante
                     </h2>
                     <div class="ml-6 text-gray-700 space-y-2">
@@ -57,31 +77,31 @@
                     </div>
                 </section>
 
+                <!-- 2. A Solução: Empreendimento de Limpeza Local -->
                 <section id="tab-solucao" class="tab-content hidden p-6 bg-blue-50 rounded-lg border-l-4 border-blue-600 shadow-md">
                     <h2 class="text-2xl font-bold text-blue-700 mb-3 flex items-center">
-                        <svg class="w-6 h-6 mr-2 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 21h.01M21 12c0 4.418-4.03 8-9 8s-9-3.582-9-8 4.03-8 9-8 9 3.582 9 8z"></path>
-                        </svg>
+                        <!-- Icone de Lâmpada (Ideia/Solução) -->
+                        <svg class="w-6 h-6 mr-2 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 21h.01M21 12c0 4.418-4.03 8-9 8s-9-3.582-9-8 4.03-8 9-8 9 3.582 9 8z"></path></svg>
                         2. A Solução: Profissionalização e Impacto Econômico
                     </h2>
                     <p class="text-gray-700 mb-3">
                         Propomos a criação de uma <strong>Empresa Social ou Cooperativa de Serviços de Limpeza e Manutenção</strong> em Pitanga, focada em:
                     </p>
                     <div class="ml-6 text-gray-700 space-y-2">
+                        <!-- Texto ajustado para focar em Requalificação e Emprego Digno -->
                         <p><strong>Requalificação Profissional:</strong> Oferecer treinamento e empregos formais a cidadãos de Pitanga que estão em busca de oportunidades de reintegração ou de uma nova chance no mercado de trabalho.</p>
                         <p><strong>Manutenção Garantida:</strong> Estas equipes seriam treinadas especificamente para a manutenção preventiva e limpeza profunda dos colégios, garantindo ambientes saudáveis.</p>
                         <p><strong>Melhoria Econômica:</strong> O investimento municipal em manutenção é direcionado para esta cooperativa local. Este modelo permite o uso mais eficiente dos recursos, direcionando a economia gerada para outras áreas prioritárias da educação.</p>
                     </div>
                 </section>
                 
+                <!-- 3. Sustentabilidade e Rentabilidade -->
                 <section id="tab-rentabilidade" class="tab-content hidden p-6 bg-green-50 rounded-lg border-l-4 border-green-600 shadow-md">
                     <h2 class="text-2xl font-bold text-green-700 mb-3 flex items-center">
-                        <svg class="w-6 h-6 mr-2 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-2.485 0-4.5 2.015-4.5 4.5S9.515 17 12 17s4.5-2.015 4.5-4.5S14.485 8 12 8z"></path>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 100-18 9 9 0 000 18z"></path>
-                        </svg>
+                        <!-- Icone de Dinheiro/Crescimento -->
+                        <svg class="w-6 h-6 mr-2 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-2.485 0-4.5 2.015-4.5 4.5S9.515 17 12 17s4.5-2.015 4.5-4.5S14.485 8 12 8z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 100-18 9 9 0 000 18z"></path></svg>
                         3. Sustentabilidade e Rentabilidade
-                    </h2>
+                    </h2 >
                     <p class="text-gray-700 mb-3 italic">
                         A Rentabilidade da Empresa Social é medida tanto pelo retorno financeiro quanto pelo impacto social na educação:
                     </p>
@@ -99,11 +119,11 @@
                     </div>
                 </section>
 
+                <!-- 4. Concorrentes e Diferenciais -->
                 <section id="tab-concorrentes" class="tab-content hidden p-6 bg-yellow-50 rounded-lg border-l-4 border-yellow-600 shadow-md">
                     <h2 class="text-2xl font-bold text-yellow-700 mb-3 flex items-center">
-                        <svg class="w-6 h-6 mr-2 text-yellow-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-2.015 3-4.5S13.657 8 12 8s-3 2.015-3 4.5S10.343 21 12 21z"></path>
-                        </svg>
+                        <!-- Icone de Alvo -->
+                        <svg class="w-6 h-6 mr-2 text-yellow-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-2.015 3-4.5S13.657 8 12 8s-3 2.015-3 4.5S10.343 21 12 21z"></path></svg>
                         4. Concorrentes e Diferenciais
                     </h2>
                     <p class="font-semibold text-gray-900 mb-2">Principais Concorrentes e Modelos Atuais:</p>
@@ -124,6 +144,7 @@
             </div>
         </main>
 
+        <!-- Chamada para Ação (CTA) - MUDANÇA PARA CONTATO -->
         <div class="mt-10 text-center">
             <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300">
                 Apresente Esta Proposta à Prefeitura
@@ -131,12 +152,53 @@
             <p class="text-sm text-gray-500 mt-3">Baixe o PDF da proposta completa e entre em contato conosco para parceria.</p>
         </div>
 
+        <!-- Rodapé (Footer) -->
         <footer class="mt-10 pt-4 border-t border-gray-200 text-center text-gray-500 text-xs">
             © 2024 Iniciativa de Empreendedorismo Social de Pitanga. Contato: contato@propostapitanga.org
         </footer>
     </div>
 
-    <!-- Script JS externo -->
-    <script src="script.js"></script>
+    <script>
+        // Função JavaScript para controlar a troca de abas
+        function openTab(tabId, buttonId) {
+            // 1. Ocultar todos os conteúdos das abas
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => {
+                content.classList.add('hidden');
+            });
+
+            // 2. Desativar todos os botões das abas
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => {
+                // Remove a cor ativa
+                button.classList.remove('text-blue-600', 'border-blue-600');
+                // Adiciona a cor inativa
+                button.classList.add('text-gray-500', 'border-transparent');
+                // Adiciona efeito hover
+                button.classList.add('hover:text-blue-600', 'hover:border-blue-300');
+            });
+
+            // 3. Mostrar o conteúdo da aba selecionada
+            const selectedContent = document.getElementById(tabId);
+            if (selectedContent) {
+                selectedContent.classList.remove('hidden');
+            }
+
+            // 4. Ativar o botão da aba selecionada
+            const selectedButton = document.getElementById(buttonId);
+            if (selectedButton) {
+                // Remove a cor inativa
+                selectedButton.classList.remove('text-gray-500', 'border-transparent', 'hover:text-blue-600', 'hover:border-blue-300');
+                // Adiciona a cor ativa
+                selectedButton.classList.add('text-blue-600', 'border-blue-600');
+            }
+        }
+
+        // Abrir a primeira aba por padrão ao carregar a página
+        window.onload = function() {
+            openTab('tab-problema', 'btn-problema');
+        };
+    </script>
+
 </body>
 </html>
