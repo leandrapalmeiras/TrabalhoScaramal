@@ -33,7 +33,7 @@ function openTab(tabId, buttonId) {
     }
 }
 
-// Abrir a primeira aba por padrão ao carregar a página
+// Abrir a primeira aba por padrão ao carregar a página 
 window.onload = function() {
     openTab('tab-problema', 'btn-problema');
 };
