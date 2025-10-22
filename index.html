@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Proposta: Limpeza Profissional para Escolas de Pitanga, PR</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonte Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <div class="container bg-white shadow-2xl rounded-xl overflow-hidden md:p-8 p-6">
+        
+        <header class="header-bg text-white p-6 rounded-t-lg mb-6 shadow-xl">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-center">
+                PROPOSTA DE GESTÃO E SUSTENTABILIDADE ESCOLAR
+            </h1>
+            <p class="text-center mt-2 text-lg opacity-90">
+                Criando um Serviço Profissional de Limpeza e Manutenção para os Colégios de Pitanga, PR
+            </p>
+        </header>
+
+        <main>
+            <div id="tab-nav" class="flex flex-wrap justify-start border-b border-gray-300 mb-6">
+                <button id="btn-problema" onclick="openTab('tab-problema', 'btn-problema')" class="tab-button py-3 px-4 sm:px-6 text-base font-semibold text-blue-600 border-b-2 border-blue-600 transition duration-150 whitespace-nowrap">
+                    1. Problema
+                </button>
+                <button id="btn-solucao" onclick="openTab('tab-solucao', 'btn-solucao')" class="tab-button py-3 px-4 sm:px-6 text-base font-semibold text-gray-500 hover:text-blue-600 hover:border-blue-300 border-b-2 border-transparent transition duration-150 whitespace-nowrap">
+                    2. Solução
+                </button>
+                <button id="btn-rentabilidade" onclick="openTab('tab-rentabilidade', 'btn-rentabilidade')" class="tab-button py-3 px-4 sm:px-6 text-base font-semibold text-gray-500 hover:text-blue-600 hover:border-blue-300 border-b-2 border-transparent transition duration-150 whitespace-nowrap">
+                    3. Rentabilidade
+                </button>
+                <button id="btn-concorrentes" onclick="openTab('tab-concorrentes', 'btn-concorrentes')" class="tab-button py-3 px-4 sm:px-6 text-base font-semibold text-gray-500 hover:text-blue-600 hover:border-blue-300 border-b-2 border-transparent transition duration-150 whitespace-nowrap">
+                    4. Concorrentes
+                </button>
+            </div>
+
+            <div id="tab-content-container">
+
+                <section id="tab-problema" class="tab-content p-6 bg-red-50 rounded-lg border-l-4 border-red-600 shadow-md">
+                    <h2 class="text-2xl font-bold text-red-700 mb-3 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-red-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.398 16c-.77 1.333.192 3 1.732 3z"></path>
+                        </svg>
+                        1. O Problema: Necessidade de Manutenção Constante
+                    </h2>
+                    <div class="ml-6 text-gray-700 space-y-2">
+                        <p>A dependência de mutirões esporádicos e a sobrecarga das equipes municipais resultam na deterioração gradual e constante das instalações escolares.</p>
+                        <p>A falta de limpeza e manutenção profissional e frequente afeta diretamente a saúde dos alunos e professores, aumentando os riscos sanitários no ambiente escolar.</p>
+                        <p>Ambientes de aprendizado sujos ou danificados prejudicam o foco, a autoestima da comunidade escolar e, consequentemente, a qualidade do ensino oferecido.</p>
+                    </div>
+                </section>
+
+                <section id="tab-solucao" class="tab-content hidden p-6 bg-blue-50 rounded-lg border-l-4 border-blue-600 shadow-md">
+                    <h2 class="text-2xl font-bold text-blue-700 mb-3 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 21h.01M21 12c0 4.418-4.03 8-9 8s-9-3.582-9-8 4.03-8 9-8 9 3.582 9 8z"></path>
+                        </svg>
+                        2. A Solução: Profissionalização e Impacto Econômico
+                    </h2>
+                    <p class="text-gray-700 mb-3">
+                        Propomos a criação de uma <strong>Empresa Social ou Cooperativa de Serviços de Limpeza e Manutenção</strong> em Pitanga, focada em:
+                    </p>
+                    <div class="ml-6 text-gray-700 space-y-2">
+                        <p><strong>Requalificação Profissional:</strong> Oferecer treinamento e empregos formais a cidadãos de Pitanga que estão em busca de oportunidades de reintegração ou de uma nova chance no mercado de trabalho.</p>
+                        <p><strong>Manutenção Garantida:</strong> Estas equipes seriam treinadas especificamente para a manutenção preventiva e limpeza profunda dos colégios, garantindo ambientes saudáveis.</p>
+                        <p><strong>Melhoria Econômica:</strong> O investimento municipal em manutenção é direcionado para esta cooperativa local. Este modelo permite o uso mais eficiente dos recursos, direcionando a economia gerada para outras áreas prioritárias da educação.</p>
+                    </div>
+                </section>
+                
+                <section id="tab-rentabilidade" class="tab-content hidden p-6 bg-green-50 rounded-lg border-l-4 border-green-600 shadow-md">
+                    <h2 class="text-2xl font-bold text-green-700 mb-3 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-2.485 0-4.5 2.015-4.5 4.5S9.515 17 12 17s4.5-2.015 4.5-4.5S14.485 8 12 8z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 100-18 9 9 0 000 18z"></path>
+                        </svg>
+                        3. Sustentabilidade e Rentabilidade
+                    </h2>
+                    <p class="text-gray-700 mb-3 italic">
+                        A Rentabilidade da Empresa Social é medida tanto pelo retorno financeiro quanto pelo impacto social na educação:
+                    </p>
+                    <div class="space-y-2 text-sm text-gray-700">
+                        <p class="font-semibold text-gray-900">Retorno Financeiro:</p>
+                        <ul class="list-disc ml-6">
+                            <li>Contratos Fixos: Receita garantida através de contratos anuais de prestação de serviços com a Secretaria Municipal de Educação.</li>
+                            <li>Preços Competitivos: Operar com custos eficientes, focando apenas nas escolas de Pitanga, o que permite preços mais competitivos que grandes empresas de fora.</li>
+                        </ul>
+                        <p class="font-semibold text-gray-900 mt-2">Sustentabilidade Social:</p>
+                        <ul class="list-disc ml-6">
+                            <li>Fundo de Reinvestimento: Parte do lucro é reinvestida diretamente na compra de novos equipamentos para as escolas ou na qualificação da equipe.</li>
+                            <li>Medição de Impacto: Redução de faltas por motivo de doença e aumento na satisfação dos alunos e professores (ambiente escolar valorizado).</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="tab-concorrentes" class="tab-content hidden p-6 bg-yellow-50 rounded-lg border-l-4 border-yellow-600 shadow-md">
+                    <h2 class="text-2xl font-bold text-yellow-700 mb-3 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-yellow-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-2.015 3-4.5S13.657 8 12 8s-3 2.015-3 4.5S10.343 21 12 21z"></path>
+                        </svg>
+                        4. Concorrentes e Diferenciais
+                    </h2>
+                    <p class="font-semibold text-gray-900 mb-2">Principais Concorrentes e Modelos Atuais:</p>
+                    <ul class="list-disc ml-6 text-gray-700 space-y-2 mb-4">
+                        <li>Serviços Municipais: Equipes públicas (Concorrência Direta).</li>
+                        <li>Grandes Empresas de Terceirização: Empresas de outras regiões (Concorrência Indireta).</li>
+                        <li>Mutirões Voluntários: Solução paliativa (Concorrência Ocasional).</li>
+                    </ul>
+
+                    <p class="font-semibold text-gray-900 mb-2">Nossos Diferenciais Competitivos:</p>
+                    <ul class="list-disc ml-6 text-gray-700 space-y-2">
+                        <li>Compromisso Social: Todo o capital e o emprego gerado ficam em Pitanga.</li>
+                        <li>Especialização: Treinamento focado em limpeza de ambientes escolares (quadras, laboratórios, salas de aula).</li>
+                        <li>Flexibilidade: Capacidade de se adaptar rapidamente às necessidades das escolas locais, diferente de grandes corporações.</li>
+                    </ul>
+                </section>
+
+            </div>
+        </main>
+
+        <div class="mt-10 text-center">
+            <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300">
+                Apresente Esta Proposta à Prefeitura
+            </a>
+            <p class="text-sm text-gray-500 mt-3">Baixe o PDF da proposta completa e entre em contato conosco para parceria.</p>
+        </div>
+
+        <footer class="mt-10 pt-4 border-t border-gray-200 text-center text-gray-500 text-xs">
+            © 2024 Iniciativa de Empreendedorismo Social de Pitanga. Contato: contato@propostapitanga.org
+        </footer>
+    </div>
+
+    <!-- Script JS externo -->
+    <script src="script.js"></script>
+</body>
+</html>
