@@ -11,8 +11,10 @@ function openTab(tabId, buttonId) {
     buttons.forEach(button => {
         // Remove a cor ativa
         button.classList.remove('text-blue-600', 'border-blue-600');
-        // Adiciona a cor inativa e hover
-        button.classList.add('text-gray-500', 'border-transparent', 'hover:text-blue-600', 'hover:border-blue-300');
+        // Adiciona a cor inativa
+        button.classList.add('text-gray-500', 'border-transparent');
+        // Adiciona efeito hover
+        button.classList.add('hover:text-blue-600', 'hover:border-blue-300');
     });
 
     // 3. Mostrar o conteúdo da aba selecionada
