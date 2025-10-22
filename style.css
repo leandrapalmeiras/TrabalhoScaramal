@@ -1,0 +1,16 @@
+/*
+ * Arquivo: style.css
+ * Contém estilos customizados que não são classes utilitárias do Tailwind.
+ */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f7f9;
+}
+.container {
+    max-width: 900px;
+}
+.header-bg {
+    /* Cor mais voltada para o profissionalismo e educação */
+    background: linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%); 
+}
